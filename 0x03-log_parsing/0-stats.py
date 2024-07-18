@@ -51,7 +51,8 @@ for line in sys.stdin:
 
         lines_num += 1
 
-        if lines_num % 10 == 0:
+        if lines_num == 10:
             print_statistics()
+            lines_num = 0
 
 print_statistics()
